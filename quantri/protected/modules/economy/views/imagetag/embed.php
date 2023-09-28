@@ -1,0 +1,1 @@
+<img src="<?php echo ClaUrl::getImageUrl($productImage->path,$productImage->name,array('width'=>1000,'height'=>1000)); ?>" class="imageTag load" data-info="<?php echo base64_encode(json_encode($data)); ?>" data-iid="<?php echo $productImage->img_id; ?>" />

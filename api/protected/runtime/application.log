@@ -1,0 +1,105 @@
+2022/02/09 16:29:40 [warning] [application] Failed to set unsafe attribute "email" of "Shipping".
+in /var/www/nanoweb_update/api/protected/modules/app/controllers/ShoppingController.php (213)
+in /var/www/nanoweb_update/common/components/WebApplication.php (50)
+in /var/www/nanoweb_update/api/index.php (18)
+2022/02/09 16:29:40 [warning] [application] Failed to set unsafe attribute "zipcode" of "Shipping".
+in /var/www/nanoweb_update/api/protected/modules/app/controllers/ShoppingController.php (213)
+in /var/www/nanoweb_update/common/components/WebApplication.php (50)
+in /var/www/nanoweb_update/api/index.php (18)
+2022/02/09 16:29:40 [warning] [application] Failed to set unsafe attribute "billtoship" of "Shipping".
+in /var/www/nanoweb_update/api/protected/modules/app/controllers/ShoppingController.php (213)
+in /var/www/nanoweb_update/common/components/WebApplication.php (50)
+in /var/www/nanoweb_update/api/index.php (18)
+2022/02/09 16:31:59 [error] [exception.CHttpException.404] CHttpException: Không thể giải quyết yêu cầu "v1/rating". in /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/nanoweb_update/common/components/WebApplication.php(50): CWebApplication->runController('v1/rating')
+#1 /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php(141): WebApplication->runController('v1/rating')
+#2 /var/www/nanoweb_update/common/lib/Yii/base/CApplication.php(184): CWebApplication->processRequest()
+#3 /var/www/nanoweb_update/api/index.php(18): CApplication->run()
+#4 {main}
+REQUEST_URI=/api/v1/rating
+---
+2022/02/09 16:32:05 [warning] [application] Failed to set unsafe attribute "email" of "Shipping".
+in /var/www/nanoweb_update/api/protected/modules/app/controllers/ShoppingController.php (213)
+in /var/www/nanoweb_update/common/components/WebApplication.php (50)
+in /var/www/nanoweb_update/api/index.php (18)
+2022/02/09 16:32:05 [warning] [application] Failed to set unsafe attribute "zipcode" of "Shipping".
+in /var/www/nanoweb_update/api/protected/modules/app/controllers/ShoppingController.php (213)
+in /var/www/nanoweb_update/common/components/WebApplication.php (50)
+in /var/www/nanoweb_update/api/index.php (18)
+2022/02/09 16:32:05 [warning] [application] Failed to set unsafe attribute "billtoship" of "Shipping".
+in /var/www/nanoweb_update/api/protected/modules/app/controllers/ShoppingController.php (213)
+in /var/www/nanoweb_update/common/components/WebApplication.php (50)
+in /var/www/nanoweb_update/api/index.php (18)
+2022/02/09 16:38:41 [error] [exception.CHttpException.404] CHttpException: Không thể giải quyết yêu cầu "v1/rating". in /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/nanoweb_update/common/components/WebApplication.php(50): CWebApplication->runController('v1/rating')
+#1 /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php(141): WebApplication->runController('v1/rating')
+#2 /var/www/nanoweb_update/common/lib/Yii/base/CApplication.php(184): CWebApplication->processRequest()
+#3 /var/www/nanoweb_update/api/index.php(18): CApplication->run()
+#4 {main}
+REQUEST_URI=/api/v1/rating
+---
+2022/02/09 16:38:46 [error] [exception.CHttpException.404] CHttpException: Không thể giải quyết yêu cầu "v1/rating". in /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/nanoweb_update/common/components/WebApplication.php(50): CWebApplication->runController('v1/rating')
+#1 /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php(141): WebApplication->runController('v1/rating')
+#2 /var/www/nanoweb_update/common/lib/Yii/base/CApplication.php(184): CWebApplication->processRequest()
+#3 /var/www/nanoweb_update/api/index.php(18): CApplication->run()
+#4 {main}
+REQUEST_URI=/api/v1/rating
+---
+2022/02/09 16:39:18 [error] [exception.CHttpException.404] CHttpException: Không thể giải quyết yêu cầu "v1/rating". in /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/nanoweb_update/common/components/WebApplication.php(50): CWebApplication->runController('v1/rating')
+#1 /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php(141): WebApplication->runController('v1/rating')
+#2 /var/www/nanoweb_update/common/lib/Yii/base/CApplication.php(184): CWebApplication->processRequest()
+#3 /var/www/nanoweb_update/api/index.php(18): CApplication->run()
+#4 {main}
+REQUEST_URI=/api/v1/rating
+---
+2022/02/09 16:39:39 [error] [exception.CHttpException.404] CHttpException: Không thể giải quyết yêu cầu "v1/rating". in /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/nanoweb_update/common/components/WebApplication.php(50): CWebApplication->runController('v1/rating')
+#1 /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php(141): WebApplication->runController('v1/rating')
+#2 /var/www/nanoweb_update/common/lib/Yii/base/CApplication.php(184): CWebApplication->processRequest()
+#3 /var/www/nanoweb_update/api/index.php(18): CApplication->run()
+#4 {main}
+REQUEST_URI=/api/v1/rating
+---
+2022/02/09 16:39:41 [error] [exception.CHttpException.404] CHttpException: Không thể giải quyết yêu cầu "v1/rating". in /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/nanoweb_update/common/components/WebApplication.php(50): CWebApplication->runController('v1/rating')
+#1 /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php(141): WebApplication->runController('v1/rating')
+#2 /var/www/nanoweb_update/common/lib/Yii/base/CApplication.php(184): CWebApplication->processRequest()
+#3 /var/www/nanoweb_update/api/index.php(18): CApplication->run()
+#4 {main}
+REQUEST_URI=/api/v1/rating
+---
+2022/02/09 16:39:43 [error] [exception.CHttpException.404] CHttpException: Không thể giải quyết yêu cầu "v1/rating". in /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/nanoweb_update/common/components/WebApplication.php(50): CWebApplication->runController('v1/rating')
+#1 /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php(141): WebApplication->runController('v1/rating')
+#2 /var/www/nanoweb_update/common/lib/Yii/base/CApplication.php(184): CWebApplication->processRequest()
+#3 /var/www/nanoweb_update/api/index.php(18): CApplication->run()
+#4 {main}
+REQUEST_URI=/api/v1/rating
+---
+2022/02/09 16:39:46 [error] [exception.CHttpException.404] CHttpException: Không thể giải quyết yêu cầu "v1/rating". in /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/nanoweb_update/common/components/WebApplication.php(50): CWebApplication->runController('v1/rating')
+#1 /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php(141): WebApplication->runController('v1/rating')
+#2 /var/www/nanoweb_update/common/lib/Yii/base/CApplication.php(184): CWebApplication->processRequest()
+#3 /var/www/nanoweb_update/api/index.php(18): CApplication->run()
+#4 {main}
+REQUEST_URI=/api/v1/rating
+---
+2022/02/09 16:43:44 [error] [exception.CHttpException.404] CHttpException: Không thể giải quyết yêu cầu "v1/rating". in /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/nanoweb_update/common/components/WebApplication.php(50): CWebApplication->runController('v1/rating')
+#1 /var/www/nanoweb_update/common/lib/Yii/web/CWebApplication.php(141): WebApplication->runController('v1/rating')
+#2 /var/www/nanoweb_update/common/lib/Yii/base/CApplication.php(184): CWebApplication->processRequest()
+#3 /var/www/nanoweb_update/api/index.php(18): CApplication->run()
+#4 {main}
+REQUEST_URI=/api/v1/rating
+---

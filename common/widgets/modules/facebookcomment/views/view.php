@@ -1,0 +1,1 @@
+<div class="fb_comment"><div class="fb-comments" data-href="<?php echo $link; ?>" data-numposts="5" data-colorscheme="light" width="100%"></div></div>

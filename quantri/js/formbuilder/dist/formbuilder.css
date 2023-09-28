@@ -1,0 +1,98 @@
+.fb-button{display:inline-block;margin:0;padding:.563rem .844rem;border:0 none;background:#999;color:#fff;text-align:center;text-decoration:none;font-size:12px;line-height:1.5;cursor:pointer;border-radius:.125rem;border:thin solid #FAFAFA;border-bottom:2px solid #FAFAFA;}
+.fb-button[disabled]{background:#ddd !important;border:thin solid #ccc;color:#777 !important;text-shadow:none !important;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";opacity:.65;cursor:default}
+.fb-clear{clear:both}
+.fb-main{border: 1px solid #ccc; margin-bottom: 20px; position:relative;font-family:'Source Sans Pro','Open Sans',Tahoma}
+.fb-save-wrapper{position:absolute;right:20px;top:10px; display: none;}
+.fb-left{float:left;width:350px;padding: 20px 0px;}
+.fb-right{padding-top:20px;margin-left:320px;border-left:1px solid #ddd;padding-left:20px;min-height:450px;overflow:hidden}
+.fb-no-response-fields{color:#999}
+.fb-tabs{list-style:none;margin:0 0 20px 0;padding:0 0 0 20px;border-bottom:1px solid #ccc}
+.fb-tabs li{display:inline-block}
+.fb-tabs li a{display:block;padding:10px;border-radius:5px 5px 0 0;font-size:13px;cursor:pointer;border-left:1px solid transparent;border-right:1px solid transparent; color: #58514b;}
+.fb-tabs li.active a{border:1px solid #ccc;margin-bottom:-1px;border-bottom-color:#fff}
+.fb-tab-content .fb-tab-pane{padding:0 20px;display:none}
+.fb-tab-content .fb-tab-pane.active{display:block}
+.fb-add-field-types .section{padding-bottom:5px;margin-bottom:20px}
+.fb-add-field-types{font-size:0}
+.fb-add-field-types .addfieldbutton{display:inline-block;width:48%;}
+.fb-add-field-types a{font-size:13px;display:block;background-color:#999;margin-bottom:9px;box-sizing:border-box}
+.fb-add-field-types a:hover{font-weight: bold; color: #FFF;}
+.fb-add-field-types .addfieldbutton:nth-child(odd){margin-right:3%}
+.fb-add-field-types a .symbol{opacity:.6;margin:0 .25em 0 -1em}
+.fb-response-fields{padding-bottom:150px}
+.fb-response-fields a.sortable-placeholder{display:block;border:1px dashed #ddd;min-height:80px;height:80px;width:100%}
+.fb-field-wrapper{cursor:pointer;position:relative;margin-bottom:20px}
+.fb-field-wrapper input{border-radius:3px;border:thin solid #ddd}
+.fb-field-wrapper:hover .actions-wrapper,.fb-field-wrapper.editing .actions-wrapper{display:block}
+.fb-field-wrapper:hover .subtemplate-wrapper{border-color:#ddd;border-radius:3px}
+.fb-field-wrapper.editing{background-color:#ecf0f1;border-radius:3px}
+.fb-field-wrapper.editing .subtemplate-wrapper{border-color:#d9e1e3;border-style:solid;margin:0;border-radius:3px}
+.fb-field-wrapper .actions-wrapper{display:none;position:absolute;bottom:-7px;right:5px;z-index:3}
+.fb-field-wrapper .actions-wrapper a{display:inline-block;background-color:#ccc;padding:2px 8px}
+.edit-response-field input,.edit-response-field textarea,.edit-response-field select{border:thin solid #ddd;border-radius:.25em;padding:.5em;display:inline-block;height:auto;vertical-align:middle}
+.edit-response-field input:focus,.edit-response-field textarea:focus,.edit-response-field select:focus{outline:none;border:thin solid #1abc9c}
+.edit-response-field select{font-size:14px}
+
+.fb-field-wrapper .actions-wrapper a.js-duplicate,.fb-edit-field-wrapper .js-add-option{background-color:#999;border:none}
+.fb-field-wrapper .actions-wrapper a.js-clear,.fb-edit-field-wrapper .js-remove-option{background-color:#BBB;border:none}
+
+.fb-field-wrapper .actions-wrapper a.js-duplicate:hover,.fb-edit-field-wrapper .js-add-option:hover{color: #694469;}
+.fb-field-wrapper .actions-wrapper a.js-clear:hover,.fb-edit-field-wrapper .js-remove-option:hover{color: #695569;}
+
+.fb-field-wrapper .subtemplate-wrapper{border:1px dashed transparent;margin-bottom:10px;padding:10px;position:relative}
+.fb-field-wrapper .subtemplate-wrapper .cover{position:absolute;top:0;left:0;height:100%;width:100%;z-index:2}
+.fb-field-wrapper .subtemplate-wrapper > label{display:block;border-bottom:thin solid #eee;padding-bottom:3px;margin-bottom:7px}
+.fb-field-wrapper .subtemplate-wrapper abbr{color:#f00}
+.fb-field-wrapper .input-line{clear:both;margin-bottom:10px}
+.fb-field-wrapper .input-line .above-line{margin-top:7px}
+.fb-field-wrapper .input-line > span{display:inline-block;vertical-align:top}
+.fb-field-wrapper .input-line > span input{width:100%}
+.fb-field-wrapper .input-line > span > label{display:block;font-size:13px;margin-left:3px}
+.fb-field-wrapper .help-block{display:block;font-size:12px;margin-top:5px}
+.fb-edit-field-wrapper{font-size:13px}
+.fb-edit-field-wrapper .fb-field-label{font-weight:normal;background:#eee;padding:.75em;color:#666;font-size:1.25em}
+.fb-edit-field-wrapper .fb-field-label .field-type{margin-top:.5em;display:block;font-family:'Source Sans Pro',sans-serif;font-size:1em}
+.fb-edit-field-wrapper .fb-field-label .field-type:before{content:'Type: ';color:#999}
+.fb-edit-field-wrapper .fb-field-label .fa.fa-arrow-right{display:none}
+.fb-edit-field-wrapper .fb-edit-section-header{border-bottom:1px solid #ddd;margin-top:25px;margin-bottom:10px;padding-bottom:5px;clear:both;font-weight:600}
+.fb-edit-field-wrapper .js-add-option,.fb-edit-field-wrapper .js-remove-option{padding:3px 6px}
+.fb-edit-field-wrapper .fb-bottom-add{margin-top:8px}
+.fb-common-wrapper .fb-label-description{margin-bottom:10px}
+.fb-common-wrapper .fb-label-description input,.fb-common-wrapper .fb-label-description textarea{width:100%}
+.fb-common-wrapper .fb-label-description textarea{min-height:5em}
+.response-field-draggable-helper{border:1px dashed #ddd;background:#eee}
+.response-field-text input.rf-size-small{width:130px; padding: 4px 0px;}
+.response-field-text input.rf-size-medium{width:300px; padding: 4px 0px;}
+.response-field-text input.rf-size-large{width:100% ;padding: 4px 0px;}
+.response-field-paragraph textarea.rf-size-small{width:200px;min-height:60px}
+.response-field-paragraph textarea.rf-size-medium{width:400px;min-height:100px}
+.response-field-paragraph textarea.rf-size-large{width:100%;min-height:200px; padding: 0px;}
+.response-field-address .street{width:400px}
+.response-field-address .city,.response-field-address .state,.response-field-address .zip,.response-field-address .country{width:198px}
+.response-field-date .month,.response-field-date .day,.response-field-date .year{width:50px}
+.response-field-time .hours,.response-field-time .minutes,.response-field-time .seconds{width:50px}
+.response-field-checkboxes .fb-option,.response-field-radio .fb-option{margin-bottom:5px;display:inline-block}
+.response-field-website input{width:200px}
+.option-label-input{width: 125px;}
+.option-value-input{width: 80px;}
+
+.fb-main .fbitem{padding:0 20px 0 0;}
+.item_basic_info{border-bottom: 1px solid #ccc; padding: 20px 20px 10px 20px;}
+.item_basic_info .itemname{width: 80%;}
+.item_basic_info .itemdescription{width: 80%;}
+ul.applyto{width: 80% !important; padding: 0px 6px !important;}
+.item_basic_info .inline{margin-bottom: 10px;}
+.fb-main .item_basic_info .error input,.fb-main .item_basic_info .error textArea, .fb-main .error .fb-no-response-fields{border: 1px solid red;}
+.preview{padding:10px; margin: 0px;}
+.preview .iteminfo{display: block; border-bottom: 1px solid #CCCCCC; cursor: pointer;}
+/*    .preview .iteminfo .itemcontent{padding: 16px 15px;}*/
+.preview .iteminfo .itemhead{padding: 10px 5px; background-color: #EDFDEB; font-weight: bold; font-size: 11pt; border: 1px solid #EDFDEB; border-bottom: none;}
+.preview .iteminfo .itemhead p{margin: 0px; font-size: 15px;}
+.preview .iteminfo .itemhead .itemname{font-weight: bold;}
+.preview .iteminfo .itemhead .itemdes{color: #666; font-weight: normal; font-size: 13px;}
+.preview .iteminfo .itemfields{display: none; padding-bottom: 10px;}
+.preview .iteminfo .itemfields .field{padding-top: 10px;}
+.preview .iteminfo .itemfields .field textArea,.preview .iteminfo .itemfields .field select,.preview .iteminfo .itemfields .field .textf input{width: 100%; padding: 4px 0px;}
+.preview .iteminfo .itemtitle{font-weight: 500; font-size: 15px;}
+.fb-main .item_remove{position: absolute; right: 10px; top: 10px; display: none;}
+.fb-main:hover .item_remove{display: block;}

@@ -1,0 +1,116 @@
+.addres_shop .list_item {
+    flex-direction: column-reverse;
+}
+
+.addres_shop .item_address {
+    width: 100%;
+}
+.albums .album-item {
+    padding: 10px;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 20%);
+    background: #fff;
+}
+.album-item-link {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    height: 240px;
+}
+.album-item-link img {
+    margin: 0;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.album-item-link img:hover {
+    transform: scale(1.1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.album-item-content {
+    height: 106px;
+}
+.title_album {
+    color: #222;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+    /* line-height: 27px; */
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    padding-top: 10px;
+    /* height: 53px; */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.title_album:hover {
+    color: #10a3cc;
+}
+.content_album {
+    font-size: 14px;
+    padding-top: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.thumbnail {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.noscroll {
+    overflow: hidden;
+}
+.newsdetail h1,
+.newsdetail .h1 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.newsdetail h2,
+.newsdetail .h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.newsdetail h3,
+.newsdetail .h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.newsdetail h4,
+.newsdetail .h4 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.newsdetail h5,
+.newsdetail .h5 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.newsdetail h6,
+.newsdetail .h6 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.hethang {
+    left: 15px;
+    background: #565656;
+    font-size: 12px;
+    position: absolute;
+    top: 15px;
+    z-index: 888;
+    color: #fff;
+    padding: 3px 5px;
+    line-height: 20px;
+}
+.green {
+    color: green;
+}

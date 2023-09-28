@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01-02-2016, 17:00:11
+    Author     : MyPC
+*/
+
+/*@font-face {*/
+    /*font-family: "Zawgyi-One";*/
+    /*src: url(fonts/ZawgyiOne.ttf); !* IE *!*/
+    /*src: local("Zawgyi-One"), url("fonts/ZawgyiOne.ttf") format("truetype"); !*non-IE*!*/
+/*}*/
+/*@font-face {*/
+    /*font-family: "Myanmar3";*/
+    /*src: url(fonts/Myanmar3.ttf); !* IE *!*/
+    /*src:local("Myanmar3"), url("fonts/Myanmar3.ttf") format("opentype"),*/
+        /*url("fonts/Myanmar3.woff") format("woff"), */
+        /*url("fonts/Myanmar3.ttf") format("truetype"),*/
+        /*url("fonts/Myanmar3.svg#Myanmar3") format("svg");*/
+/*}*/
+
+/* cyrillic-ext */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&subset=vietnamese');
+@font-face {
+    font-family: 'Batang';
+    src: url('fonts/batang.ttf');
+}
+@font-face {
+    font-family: 'ModernH-Bold';
+    src: url('fonts/ModernH-Bold.v1.0.ttf');
+}
+@font-face {
+    font-family: 'ModernH-EcoLight';
+    src: url('fonts/ModernH-EcoLight.v1.0.ttf');
+}

@@ -1,0 +1,1 @@
+<a class="youtube" target="_blank" href="<?php echo $data['link'] ?>"><i class="fa fa-youtube-play"></i> <?= $data['title']?></a>

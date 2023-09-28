@@ -1,0 +1,32 @@
+.clearfix:after{
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height:0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.floatleft{
+    float: left;
+}
+
+.floatright{
+    float:right;
+}
+
+.sele{
+    padding: 4px 4px 4px 2px; 
+}
+.sele option{
+    padding: 2px 4px 2px 0px;
+}
+.table tr td{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.label{
+    font-weight: bold;
+}

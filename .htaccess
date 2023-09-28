@@ -1,0 +1,30 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} !^xebaonam.nanoweb.vn$
+RewriteRule (.*) https://xebaonam.nanoweb.vn/$1 [L,R=301]
+
+#RewriteCond %{HTTP_HOST} ^(www\.)?nanoweb.vn$
+#RewriteCond %{HTTPS} off
+#RewriteRule ^ https://nanoweb.vn%{REQUEST_URI} [NC,L,R]
+
+#RewriteCond %{HTTP_HOST} ^(www\.)?xebaonam.com$
+#RewriteCond %{HTTPS} off
+#RewriteRule ^ https://xebaonam.com%{REQUEST_URI} [NC,L,R=301]
+
+# Rewrite to correct domain to avoid canonicalization problems
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+Rewriterule ^(.*)sitemap.xml$ sitemap/%{HTTP_HOST}_sitemap.xml [L]
+Rewriterule ^(.*)robots.txt$ robots/%{HTTP_HOST}_robots.txt [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule . index.php
+

@@ -1,0 +1,4 @@
+var firstitem   = jQuery('#algalleyImg .alimglist').find('#sortableImg');
+var alimgitem  = '<li class="ui-state-default"><div class="alimgitem"><div class="alimgitembox"> <div class="delimg"><a href="#" class="new_delimgaction"><i class="icon-remove"></i></a></div><div class="alimgthum"><img src="'+da.imgurl+'"></div><div class="alimgaction"><input class="position_image" type="hidden" name="order_img[0][]" value="newimage[0[]]" /><input type="radio" value="new_'+da.imgid+'" name="setava"><span>" . Yii::t('album', 'album_set_avatar') . "</span></div><input type="hidden" value="'+da.imgid+'" name="newimage[0][]" class="newimage" /></div></div></li>';
+if(firstitem.html()){firstitem.before(alimgitem);}else{jQuery('#algalley #sortable').append(alimgitem);};
+updateImgBox();

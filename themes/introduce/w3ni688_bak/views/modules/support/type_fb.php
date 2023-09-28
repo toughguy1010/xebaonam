@@ -1,0 +1,1 @@
+<a class="fb" target="_blank" href="<?php echo $data['link'] ?>"><i class="fa fa-facebook-square"></i> <?= $data['title']?></a>

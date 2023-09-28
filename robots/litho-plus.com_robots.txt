@@ -1,0 +1,7 @@
+# Robots.txt
+User-agent: *
+Disallow: /dang-nhap
+Disallow: /dang-ky
+Disallow: /gio-hang
+Disallow: /sso/
+Sitemap: http://litho-plus.com/sitemap.xml

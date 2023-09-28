@@ -1,0 +1,1 @@
+<?php return array('value'=> '{"id":"31984","page_widget_id":"32597","site_id":"1155","user_id":"1072","config_data":"{\"limit\":\"5\",\"cat_id\":5406,\"full\":\"0\",\"news_hot\":\"0\",\"showallpage\":\"0\",\"widget_title\":\"Tin t\u1ee9c\",\"show_wiget_title\":\"0\"}","created_time":"1466423937","modified_time":"1466423937"}', 'mode'=>true);

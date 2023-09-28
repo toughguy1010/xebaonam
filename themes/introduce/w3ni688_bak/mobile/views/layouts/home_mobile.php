@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<?php
+        $themUrl = Yii::app()->theme->baseUrl;
+        $cs = Yii::app()->getClientScript();
+        Yii::app()->clientScript->registerCoreScript('jquery');
+        $vs = '1.1.8';
+    ?>
+	<title>Trang chủ</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="<?= $themUrl?>/css/mobile/css/vendors/font-awesome.css" rel="stylesheet" />
+	<link href="<?= $themUrl?>/css/mobile/css/vendors/plugin.css" rel="stylesheet" />
+	<link href="<?= $themUrl?>/css/mobile/css/vendors/slick.css" rel="stylesheet" />
+	<link href="<?= $themUrl?>/css/mobile/css/style.css" rel="stylesheet" />
+	<!-- Modernizr -->
+	<script src="<?= $themUrl?>/css/mobile/js/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="mobile">
+		<div class="menu-bar-mobile" tabindex="-1">
+			<div class="logo-menu">
+				<a href=""><img class="transition" src="<?= $themUrl?>/css/mobile/images/logo_mobile.png"></a>
+			</div>
+			<div class="box-login-logout">
+				<div class="left">
+					<a href=""><i class="fa fa-lock" aria-hidden="true"></i>Đăng nhập</a>
+				</div>
+				<div class="left">
+					<a href=""><i class="fa fa-key" aria-hidden="true"></i>Đăng ký</a>
+				</div>
+				<span class="boder-rotate"></span>
+			</div>
+			<div class="menu-bar-lv-1">
+				<a class="a-lv-1" href="">Chọn giao diện</a>
+				<div class="menu-bar-lv-2">
+					<a class="a-lv-2" href=""><i class="fa fa-angle-right"></i>Bảng giá</a>
+					<div class="menu-bar-lv-3">
+						<a class="a-lv-3" href=""><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i>Bảng giá</a>
+					</div>
+					<div class="menu-bar-lv-3">
+						<a class="a-lv-3" href=""><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i>Dịch vụ</a>
+					</div>
+					<div class="menu-bar-lv-3">
+						<a class="a-lv-3" href=""><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i>Blog</a>
+					</div>
+					<span class="span-lv-2 fa fa-angle-down"></span>
+				</div>
+				<div class="menu-bar-lv-2"><a class="a-lv-2" href=""><i class="fa fa-angle-right"></i>Bảng giá</a></div>
+				<div class="menu-bar-lv-2"><a class="a-lv-2" href=""><i class="fa fa-angle-right"></i>Dịch vụ</a></div>
+				<div class="menu-bar-lv-2"><a class="a-lv-2" href=""><i class="fa fa-angle-right"></i>Blog</a></div>
+				<span class="span-lv-1 fa fa-angle-down"></span>
+			</div>
+			<div class="menu-bar-lv-1"><a href="">Bảng giá</a></div>
+			<div class="menu-bar-lv-1"><a href="">Dịch vụ</a></div>
+			<div class="menu-bar-lv-1">
+				<a class="a-lv-1" href="">Tin tức</a>
+				<div class="menu-bar-lv-2">
+					<a class="a-lv-2" href=""><i class="fa fa-angle-right"></i>Bảng giá</a>
+					<div class="menu-bar-lv-3">
+						<a class="a-lv-3" href=""><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i>Bảng giá</a>
+					</div>
+					<div class="menu-bar-lv-3">
+						<a class="a-lv-3" href=""><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i>Dịch vụ</a>
+					</div>
+					<div class="menu-bar-lv-3">
+						<a class="a-lv-3" href=""><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i>Tin tức</a>
+					</div>
+					<span class="span-lv-2 fa fa-angle-down"></span>
+				</div>
+				<div class="menu-bar-lv-2"><a class="a-lv-2" href=""><i class="fa fa-angle-right"></i>Bảng giá</a></div>
+				<div class="menu-bar-lv-2"><a class="a-lv-2" href=""><i class="fa fa-angle-right"></i>Dịch vụ</a></div>
+				<div class="menu-bar-lv-2"><a class="a-lv-2" href=""><i class="fa fa-angle-right"></i>Blog</a></div>
+				<span class="span-lv-1 fa fa-angle-down"></span>
+			</div>
+			<div class="menu-bar-lv-1"><a href="">Về chúng tôi</a></div>
+			<div class="menu-bar-lv-1"><a href="">Hỗ trợ</a></div>
+		</div>
+
+		<header>
+			<div class="container">
+				<div class="header_top_mobile">
+					<div class="logo_mobile">
+						<h1><a href=""><img src="<?= $themUrl?>/css/mobile/images/logo_mobile.png"></a></h1>
+					</div>
+					<div class="search_box_mobile">
+						<form>
+							<input type="text" name="" placeholder="Search">
+							<button><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>
+					</div>
+					<div class="menu-btn-show">
+						<span class="border-style"></span>
+						<span class="border-style"></span>
+						<span class="border-style"></span>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Slider mobile -->
+		<div class="slider_mobile">
+
+			<div class="slider_m">
+				<div class="item">
+					<a><img src="<?= $themUrl?>/css/mobile/images/slider.jpg"></a>
+				</div>
+				<div class="item">
+					<a><img src="<?= $themUrl?>/css/mobile/images/slider.jpg"></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Slider menu car -->
+		<div class="slider_menu_car">
+			<div class="menu_car">
+				<div class="item">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/xe1.png"></a>
+					</div>
+					<div class="text">
+						<a><h3>Xe điện 50cc</h3></a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/xe2.png"></a>
+					</div>
+					<div class="text">
+						<a><h3>Xe điện 50cc</h3></a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/xe3.png"></a>
+					</div>
+					<div class="text">
+						<a><h3>Xe điện 50cc</h3></a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/xe1.png"></a>
+					</div>
+					<div class="text">
+						<a><h3>Xe điện 50cc</h3></a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/xe2.png"></a>
+					</div>
+					<div class="text">
+						<a><h3>Xe điện 50cc</h3></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- main -->
+		<div class="main">
+
+			<div class="list_car_mobile">
+				<div class="title_list_car">
+					<h2><span>Sản phẩm hot</span></h2>
+				</div>
+				<div class="item_car_mobile">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/car1.png"></a>
+					</div>
+					<div class="text">
+						<a href=""><h2>Xe máy Cub 50CC màu nâu</h2></a>
+						<p class="price_news">14.500.000 đ</p>
+						<p class="price_old">17.500.00 đ</p>
+					</div>
+				</div>
+				<div class="item_car_mobile">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/car1.png"></a>
+					</div>
+					<div class="text">
+						<a href=""><h2>Xe máy Cub 50CC màu nâu</h2></a>
+						<p class="price_news">14.500.000 đ</p>
+						<p class="price_old">17.500.00 đ</p>
+					</div>
+				</div>
+				<div class="item_car_mobile">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/car1.png"></a>
+					</div>
+					<div class="text">
+						<a href=""><h2>Xe máy Cub 50CC màu nâu</h2></a>
+						<p class="price_news">14.500.000 đ</p>
+						<p class="price_old">17.500.00 đ</p>
+					</div>
+				</div>
+				<div class="item_car_mobile">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/car1.png"></a>
+					</div>
+					<div class="text">
+						<a href=""><h2>Xe máy Cub 50CC màu nâu</h2></a>
+						<p class="price_news">14.500.000 đ</p>
+						<p class="price_old">17.500.00 đ</p>
+					</div>
+				</div>
+				<div class="img_banner_mobile">
+					<a><img src="<?= $themUrl?>/css/mobile/images/b.jpg"></a>
+				</div>
+			</div>
+
+			<div class="list_car_mobile">
+				<div class="title_list_car">
+					<h2><span>Xe máy 50CC</span></h2>
+				</div>
+				<div class="item_car_mobile">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/car1.png"></a>
+					</div>
+					<div class="text">
+						<a href=""><h2>Xe máy Cub 50CC màu nâu</h2></a>
+						<p class="price_news">14.500.000 đ</p>
+						<p class="price_old">17.500.00 đ</p>
+					</div>
+				</div>
+				<div class="item_car_mobile">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/car1.png"></a>
+					</div>
+					<div class="text">
+						<a href=""><h2>Xe máy Cub 50CC màu nâu</h2></a>
+						<p class="price_news">14.500.000 đ</p>
+						<p class="price_old">17.500.00 đ</p>
+					</div>
+				</div>
+				<div class="item_car_mobile">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/car1.png"></a>
+					</div>
+					<div class="text">
+						<a href=""><h2>Xe máy Cub 50CC màu nâu</h2></a>
+						<p class="price_news">14.500.000 đ</p>
+						<p class="price_old">17.500.00 đ</p>
+					</div>
+				</div>
+				<div class="item_car_mobile">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/car1.png"></a>
+					</div>
+					<div class="text">
+						<a href=""><h2>Xe máy Cub 50CC màu nâu</h2></a>
+						<p class="price_news">14.500.000 đ</p>
+						<p class="price_old">17.500.00 đ</p>
+					</div>
+				</div>
+				<div class="img_banner_mobile">
+					<a><img src="<?= $themUrl?>/css/mobile/images/b1.jpg"></a>
+				</div>
+			</div>
+
+			<div class="list_car_mobile">
+				<div class="title_list_car">
+					<h2><span>Xe điện </span></h2>
+				</div>
+				<div class="item_car_mobile">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/car1.png"></a>
+					</div>
+					<div class="text">
+						<a href=""><h2>Xe máy Cub 50CC màu nâu</h2></a>
+						<p class="price_news">14.500.000 đ</p>
+						<p class="price_old">17.500.00 đ</p>
+					</div>
+				</div>
+				<div class="item_car_mobile">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/car1.png"></a>
+					</div>
+					<div class="text">
+						<a href=""><h2>Xe máy Cub 50CC màu nâu</h2></a>
+						<p class="price_news">14.500.000 đ</p>
+						<p class="price_old">17.500.00 đ</p>
+					</div>
+				</div>
+				<div class="item_car_mobile">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/car1.png"></a>
+					</div>
+					<div class="text">
+						<a href=""><h2>Xe máy Cub 50CC màu nâu</h2></a>
+						<p class="price_news">14.500.000 đ</p>
+						<p class="price_old">17.500.00 đ</p>
+					</div>
+				</div>
+				<div class="item_car_mobile">
+					<div class="img">
+						<a><img src="<?= $themUrl?>/css/mobile/images/car1.png"></a>
+					</div>
+					<div class="text">
+						<a href=""><h2>Xe máy Cub 50CC màu nâu</h2></a>
+						<p class="price_news">14.500.000 đ</p>
+						<p class="price_old">17.500.00 đ</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="customer_mobile">
+				<div class="title_list_car">
+					<h2><span>Hình ảnh khách hàng</span></h2>
+				</div>
+				<div class="container">
+					<div class="item_customer_mobile">
+						<div class="img">
+							<a href=""><img src="<?= $themUrl?>/css/mobile/images/v.jpg"></a>
+						</div>
+						<div class="text">
+							<a><h2>Xe máy điện ducati Monster 110cc dạo phố sành điệu</h2></a>
+						</div>
+					</div>
+					<div class="item_customer_mobile">
+						<div class="img">
+							<a href=""><img src="<?= $themUrl?>/css/mobile/images/v.jpg"></a>
+						</div>
+						<div class="text">
+							<a><h2>Xe máy điện ducati Monster 110cc dạo phố sành điệu</h2></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="video_main_mobile">
+				<div class="title_list_car">
+					<h2><span>Hình ảnh khách hàng</span></h2>
+				</div>
+				<div class="video_mbile">
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/stO08fxbxeI" frameborder="0" allowfullscreen="">
+					</iframe>
+					<div class="text">
+						<a><h2>Xe máy bảo nam bảo hành 2 năm tặng mũ bảo hiểm khi mua xe</h2></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<footer>
+			<div class="hot_line_mobile">
+				<h2>Hotline hỗ trợ</h2>
+				<p>Gọi để được tư vấn sản phẩm dịch vụ</p>
+				<p><strong>Thời gian làm việc: 8h30 đến 22h00 từ thứ 2 đến chủ nhật hàng tuần</strong></p>
+			</div>
+			<div class="hot_line_mobile_center">
+				<a href="tel:097.66.22.88"><h3>097.66.22.88</h3></a>
+			</div>
+			<div class="address_mobile">
+				<h2>ĐỊA CHỈ SHOWROOM</h2>
+				<ul>
+					<li>Số 461 Nguyễn Trãi- Q.Thanh Xuân - Hà Nội</li>
+					<li>Số 139 Tam Khương - Đống Đa - Hà Nội</li>
+					<li>Số 587 Nguyễn Văn Cừ - Long Biên - Hà Nội</li>
+					<li>Số 645 Nguyễn Văn Cừ - Long Biên - Hà Nội</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<!-- Menu -->
+	
+	<script src="<?= $themUrl?>/css/mobile/js/slick.js"></script>
+	<script type="text/javascript">
+		$('.slider_m').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: false,
+			arrows:true,
+			infinite: true,
+			speed: 1500,
+			fade: true,
+			cssEase: 'linear'
+		});
+		$('.menu_car').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			arrows: false,
+			dots:false,
+			infinite: false,
+			responsive: [
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 1920,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			}
+			]
+		});
+
+	</script>
+	<script type="text/javascript" src="<?= $themUrl?>/css/mobile/js/script.js"></script>
+</body>

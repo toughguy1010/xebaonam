@@ -1,0 +1,215 @@
+@font-face {
+	font-family: UTM-Avo;
+	src: url(../fonts/UTM-Avo.ttf);
+}
+@font-face {
+	font-family: UTM-AvoBold;
+	src: url(../fonts/UTM-AvoBold.ttf);
+}
+.installment {
+    font-family: "UTM-Avo";
+    font-size: 14px;
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+}
+.installment .condition p {
+	margin-bottom: 0;
+}
+.installment .view-more {
+	float: left;
+	width: 100%;
+	text-align: right;
+	margin: 20px 0;
+}
+.installment .view-more a {
+	font-size: 16px;
+	font-family: "UTM-AvoBold";
+	color: #0e3178;
+	text-decoration: none;
+}
+.installment .content .tab-book-ticket {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.installment .content .tab-book-ticket ul {
+	margin: 0;
+}
+.installment .content .tab-book-ticket ul li {
+	list-style-type: none;
+	display: inline-block;
+	background: #f2f3f3;
+	padding: 5px 10px;
+}
+.installment .content .tab-book-ticket ul li.active {
+	border: 1px solid #ededed;
+	border-top: 2px solid #009bca;
+	background: #fff;
+}
+.installment .content .tab-book-ticket ul li a {
+	font-size: 16px;
+	color: #000;
+	font-family: "UTM-AvoBold";
+	text-decoration: none;
+}
+.installment .view-more a:hover {
+	color: #00f;
+}
+.content .math-installment {
+	position: relative;
+}
+.content .math-installment .item {
+	float: left;
+	width: 33.33%;
+}
+.content .math-installment .total {
+	float: left;
+}
+.content .math-installment .total p {
+	font-size: 14px;
+	font-family: "UTM-AvoBold";
+	color: #000;
+}
+.content .math-installment .total input {
+	font-family: "UTM-Avo";
+	width: 130px;
+	padding: 2px 10px;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #797979;
+	background: none;
+}
+.content .math-installment .prepaid-amount {
+	float: right;
+	text-align: right;
+	font-size: 14px;
+	font-family: "UTM-AvoBold";
+}
+.content .math-installment .prepaid-amount label {
+	color: #f00;
+}
+.content .math-installment .prepay {
+	text-align: center;
+	font-size: 14px;
+	font-family: "UTM-AvoBold";
+	color: #000;
+}
+.content .math-installment .prepay input {
+	font-family: "UTM-Avo";
+	width: 50px;
+	padding: 2px 10px;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #797979;
+	background: none;
+}
+.content .math-installment .prepay button {
+	background: #009bca;
+	border: none;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 5px;
+	box-shadow: 0px 3px 3px 0px #989797;
+}
+.content .math-installment .prepay input:after {
+}
+.tab-read {
+	display: none;
+}
+.installment .title-i {
+	float: left;
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+}
+.installment .title-i h3 {
+	float: left;
+	font-size: 16px;
+	color: #0e3178;
+	text-transform: uppercase;
+	font-family: "UTM-AvoBold";
+	margin: 0;
+}
+.installment table {
+	width: 100%;
+	float: left;
+	font-size: 16px;
+	font-family: "UTM-AvoBold";
+	color: #000;
+	text-align: center;
+}
+.installment table th,
+.installment table td {
+	background: #f2f3f3;
+	width: 25%;
+	border: 1px solid #000;
+	padding: 8px;
+	text-align: center;
+}
+.installment table td {
+	background: #fff;
+}
+.installment table tbody tr td .error {
+	font-family: UTM-Avo;
+	font-size: 14px;
+	color: #f00;
+	font-weight: 600;
+}
+.installment .condition, 
+.installment .view-more,
+.installment .content,
+.installment .content .math-installment {
+	float: left;
+	width: 100%;
+}
+.title-i .mxh {
+	float: left;
+	margin-left: 20px;
+}
+.title-i .mxh .fb {
+	float: left;
+	margin-right: 15px;
+}
+.title-i .mxh .zalo {
+	float: right;
+}
+.content .math-installment .error {
+	float: left;
+	width: 33.33%;
+	text-align: center;
+}
+.content .math-installment .error span {
+	color: #f00;
+	font-weight: 600;
+	float: left;
+	width: 100%;
+}
+@media (max-width: 575px) {
+	.content .math-installment .item {
+		/*width: 100%;*/
+		margin: 5px 0;
+		text-align: center;
+	}
+	.installment .title-i {
+		width: 100%;
+	}
+	.title-i .mxh {
+		margin-left: 0;
+		width: 100%;
+		margin-top: 15px;
+	}
+	.installment .title-i {
+		display: block;
+		align-items: inherit;
+	}
+	.title-i .mxh .zalo {
+		float: left;
+	}
+	.content .math-installment .total input {
+		width: 110px;
+	}
+	.installment table {
+		font-size: 13px;
+	}
+}

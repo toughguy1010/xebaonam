@@ -1,0 +1,10 @@
+.product-filter-box ul{margin-bottom: 0px;}
+.product-filter-box .attr-item{position: relative;}
+.product-filter-box .attr-item a{padding: 3px; border: 1px solid #E9E9E9; display: block;}
+.product-filter-box .attr-item .op-ft-del{ background-color: #E9E9E9;border-radius: 9999px;font-family: tahoma;font-size: 11px;padding: 3px;position: absolute;right: -3px;text-align: center;top: -3px;width: 14px;height: 14px;line-height: 4px; color: #333;}
+.priceFormat{text-align: right;}
+.priceFormat-text{display: none; padding-right: 12px;}
+.product-filter-box .attr-table-title{white-space: nowrap;max-width: 250px; overflow: hidden; text-overflow: ellipsis;}
+@media (max-width: 768px) {
+    .product-filter-box .priceItem{margin-bottom: 10px;}
+}

@@ -1,0 +1,79 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^(www\.)?xebaonam.com$
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://xebaonam.com%{REQUEST_URI} [NC,L,R=301]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?nanoweb.vn$
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://nanoweb.vn%{REQUEST_URI} [NC,L,R]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?giasuducminh.com$
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://giasuducminh.com%{REQUEST_URI} [NC,L,R]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?tptravel.com.vn$
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://tptravel.com.vn%{REQUEST_URI} [NC,L,R]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?suachuadienthoai247.com$
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://suachuadienthoai247.com%{REQUEST_URI} [NC,L,R]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?gtchanoi.com$
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://gtchanoi.com%{REQUEST_URI} [NC,L,R]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?carcam.vn$
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://carcam.vn%{REQUEST_URI} [NC,L,R]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ecall.vn$
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://ecall.vn%{REQUEST_URI} [NC,L,R]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?chuonggoiyta.com$
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://chuonggoiyta.com%{REQUEST_URI} [NC,L,R]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?qchic.vn$
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://qchic.vn%{REQUEST_URI} [NC,L,R]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?hungtuy.com.vn$
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://hungtuy.com.vn%{REQUEST_URI} [NC,L,R=301]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?gocallme.vn$
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://gocallme.vn%{REQUEST_URI} [NC,L,R=301]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?marcommate.com$
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://marcommate.com%{REQUEST_URI} [NC,L,R=301]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?usaorder.com.vn$
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://usaorder.com.vn%{REQUEST_URI} [NC,L,R=301]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?xebaonam.com$
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://xebaonam.com%{REQUEST_URI} [NC,L,R=301]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?wifidulich.vn$
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://wifidulich.vn%{REQUEST_URI} [NC,L,R=301]
+
+# Rewrite to correct domain to avoid canonicalization problems
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule . index.php

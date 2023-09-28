@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * Description of config_tourall
+ *
+ * @author hungtm
+ */
+class config_tourall extends ConfigWidget {
+
+    public $limit = 1;
+    public $ishot = false;
+
+    public function rules() {
+        return array_merge(array(
+            array('limit', 'required'),
+            array('limit', 'numerical', 'min' => 1),
+            array('limit, ishot', 'safe'),
+                ), parent::rules());
+    }
+
+    public function loadDefaultConfig() {
+        $this->limit = 10;
+        $this->ishot = false;
+    }
+
+    public function buildConfigAttributes() {
+        $data = array_merge(parent::buildConfigAttributes(), array(
+            'config_data' => json_encode(array(
+                'limit' => $this->limit,
+                'showallpage' => $this->showallpage,
+                'widget_title' => $this->widget_title,
+                'show_wiget_title' => $this->show_wiget_title,
+                'ishot' => $this->ishot,
+            ))
+        ));
+        return $data;
+    }
+
+}

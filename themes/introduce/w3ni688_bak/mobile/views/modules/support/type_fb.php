@@ -1,0 +1,1 @@
+<li><a rel="nofollow" target="_blank" href="<?php echo $data['link'] ?>"><i class="fb"></i></a></li>

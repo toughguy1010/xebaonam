@@ -1,0 +1,68 @@
+.menu_logo_center {
+    /*float: left;
+    width: 100%;*/
+    position: relative;
+}
+.menu_logo_center:after {
+    content:'';
+    clear: both;
+    display: table;
+}
+
+.menu_logo_center {
+    min-height: 75px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+}
+.menu_logo_center .menu_left {
+    width: initial;
+    float: left;
+    margin: 15px 0;
+}
+.menu_logo_center .menu_right {
+    width: initial;
+    float: right;
+    margin: 15px 0;
+}
+.menu_logo_center .logo {
+    position: absolute;
+    left: 0px;
+    width: 157px;
+    height: 49px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    text-align: center;
+    margin: auto;
+}
+.menu_logo_center .menu_main > ul > li a {
+    text-decoration: none;
+    padding: 16px 20px 14px 20px;
+    display: block;
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 0px;
+    color: #59595c;
+    line-height: 16px;
+}
+.span-lv-1, .span-lv-2 {
+    position: absolute;
+    right: 12px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 15px;
+}
+.menu_logo_center .menu_main > ul > li {
+    float: initial;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+}

@@ -1,0 +1,186 @@
+.lva {
+    padding: 0;
+}
+#yw0 {
+}
+.list-view {
+}
+.summary {
+    color: #7B8EB5;
+    font-weight: bold;
+    text-align: right;
+}
+.items {
+    overflow: inherit;
+}
+.lva-item {
+    display: block;
+    float: left;
+    margin: 10px;
+}
+.lva-item-container {
+    display: block;
+    position: relative;
+    width: 195px;
+}
+.lva-item-container-image {
+    border: 1px solid #CCCCCC;
+    height: 125px;
+    width: 195px;
+}
+.lva-item-name {
+    font-weight: bold;
+    margin: 0;
+}
+.lva-item-number {
+    margin: 0;
+}
+.lva-item-bg-image {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    display: block;
+    height: 117px;
+    left: 4px;
+    padding: 4px;
+    position: absolute;
+    top: 4px;
+    width: 187px;
+}
+.lva-item-image {
+    background: none repeat scroll 0 0 #E1E1E1;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.not-num-in-album {
+    font-weight: bold;
+    padding: 5px;
+}
+.pager {
+    text-align: right;
+}
+.yiiPager {
+}
+.lva-item-option {
+    font-weight: bold;
+    max-width: 35px;
+    position: relative;
+    z-index: 100;
+}
+.lva-item-option-text {
+    background-image: url("../images/0o6yEqrTpmx.png");
+    background-position: right -247px;
+    background-repeat: no-repeat;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    line-height: 18px;
+    margin: 0;
+    padding: 2px;
+}
+.lva-item-option-text-hover {
+    background-image: url("../images/0o6yEqrTpmx.png");
+    background-position: right -1px;
+    background-repeat: no-repeat;
+    border: 1px solid #E2E2E2;
+    cursor: pointer;
+    line-height: 18px;
+    margin: 0;
+    padding: 2px;
+}
+.lva-item-option-text:hover {
+    background-image: url("../images/0o6yEqrTpmx.png");
+    background-position: right -1px;
+    background-repeat: no-repeat;
+    border: 1px solid #E2E2E2;
+    cursor: pointer;
+    line-height: 18px;
+    margin: 0;
+    padding: 2px;
+}
+.lva-item-option-text-active {
+    background-color: #7B8EB5;
+    background-image: url("../images/0o6yEqrTpmx.png");
+    background-position: right -198px;
+    background-repeat: no-repeat;
+    border: 1px solid #7B8EB5;
+    color: #FFFFFF;
+    line-height: 18px;
+    margin: 0;
+    padding: 2px;
+}
+.lva-item-option-text:active {
+    background-color: #7B8EB5;
+    background-image: url("../images/0o6yEqrTpmx.png");
+    background-position: right -198px;
+    background-repeat: no-repeat;
+    border: 1px solid #7B8EB5;
+    color: #FFFFFF;
+    line-height: 18px;
+    margin: 0;
+    padding: 2px;
+}
+.lva-item-option-text:active .lva-item-option-icon {
+    background-image: url("../images/0o6yEqrTpmx.png");
+    background-position: -70px -391px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+}
+.lva-item-option-icon {
+    background-image: url("../images/0o6yEqrTpmx.png");
+    background-position: -80px -391px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+}
+.lva-item-option-icon-active {
+    background-image: url("../images/0o6yEqrTpmx.png");
+    background-position: -70px -391px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+}
+.lva-item-option-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    bottom: 0;
+    display: none;
+    font-weight: normal;
+    left: 0;
+    min-height: 125px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    width: 185px;
+    z-index: 110;
+}
+.lva-item-option-content ul {
+    padding: 5px 0;
+}
+.lva-item-option-content ul li {
+    font-weight: bold;
+    list-style: none outside none;
+    margin-bottom: 3px;
+    padding: 2px 10px;
+}
+.lva-item-option-content ul li:hover {
+    background: none repeat scroll 0 0 #7B8EB5;
+}
+.lva-item-option-content ul li:hover a {
+    color: #FFFFFF;
+}
+table.lva-item-info {
+    margin: 0;
+    width: 100%;
+}
+.lva-item-info td {
+    padding-top: 8px;
+    vertical-align: top;
+}
+.lva-item-info td.option-td {
+    padding-right: 0;
+    width: 35px;
+}

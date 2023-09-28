@@ -1,0 +1,279 @@
+
+.chat{
+ position: fixed!important;
+ bottom: 42px!important;
+ width: 100%!important;
+ color: #6c738d!important;
+ text-align: center!important;
+ z-index: 99!important;
+ display: flex!important;
+ flex-direction: row!important;
+ flex-wrap: nowrap!important;
+ justify-content: center!important;
+ background-color: #f9f9f9!important;
+ border-top: 1px solid #d8dde6!important;
+
+}
+.chat div a{
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    display: inline-block!important;
+    border: none!important;
+    font-size: 18px!important;
+    color: #fff!important;
+    text-align: center!important;
+    position: relative;
+    border-radius: 50%!important;
+    cursor: pointer!important;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.chat .fb_f a{
+    background-color: transparent!important;
+    -moz-box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+    -webkit-filter: drop-shadow(0 4px 8px rgba(29, 36, 62, .48))!important;
+    filter: drop-shadow(0 4px 8px rgba(29, 36, 62, .48))!important;
+    background-image: url(img/facebook.svg);
+}
+.chat .zalo_f a{
+    background-color: transparent!important;
+    -moz-box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+    -webkit-filter: drop-shadow(0 4px 8px rgba(29, 36, 62, .48))!important;
+    filter: drop-shadow(0 4px 8px rgba(29, 36, 62, .48))!important;
+    background-image: url(img/zalo.svg);
+}
+.chat .phone_call a{
+    background-color: transparent!important;
+    -moz-box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+    -webkit-filter: drop-shadow(0 4px 8px rgba(29, 36, 62, .48))!important;
+    filter: drop-shadow(0 4px 8px rgba(29, 36, 62, .48))!important;
+    background-image: url(img/call.svg);
+}
+.chat span {
+    font-size: 8px!important;
+    display: block!important;
+    margin-top: -8px!important;
+}
+.box-view-shop {
+    padding-left: 33px;
+}
+
+body ul.list_store li .box-view-shop a {
+    display: inline-block;
+    padding: 0px;
+    width: unset;
+}
+
+body ul.list_store li a {
+    width: unset;
+}
+
+body ul.list_store li span {
+    color: #000;
+    font-weight: bold;
+}
+
+.view-shop {
+    margin-left: 10px;
+}
+
+.view-shop i {
+    font-size: 15px !important;
+}
+
+.cont-header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.searchbox {
+    margin-top: 50px;
+}
+
+#bttop span:before {
+    cursor: pointer;
+    background: #C51616;
+    width: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    color: #FFF;
+    content: "▲";
+    opacity: .7;
+    z-index: 999;
+    border-radius: 3px;
+    border: 1px solid #01255C;
+}
+
+.cont-header {
+    /*height: 80px;*/
+}
+
+.customer-care {
+    /*width: 100%;*/
+    /*float: left;*/
+    /*height: 30px;*/
+    /*text-align: right;*/
+    /*padding-right: 10px;*/
+
+    width: 225px;
+    float: left;
+    height: 30px;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    /*background: #fff;*/
+    background: #009bca;
+    line-height: 30px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.customer-care a {
+    color: #fff;
+}
+
+.logo {
+    /*top: 20px;*/
+}
+
+.searchbox {
+    /*margin-top: 80px;*/
+}
+
+.box-nav {
+    top: 50px;
+}
+
+#introduce-mobile .content-intro-mobile{float:left;width:100%;}
+#introduce-mobile .content-intro-mobile ul li{float: left; width: 100%;}
+@media (max-width: 767px){
+    .mobile_menu .logo_mobile {
+        width: 60%;
+    }
+}
+/*05/12*/
+@media (max-width: 767px){.list_car_mobile .item_car_mobile {
+    height: 450px;
+}
+}
+.box-km-detail.clearfix .cont p{
+    text-decoration:none!important;
+} 
+.box-km-detail {
+    position: relative;
+    margin-top: 16px;
+    clear: both;
+}
+.box-km-detail ul li{
+    position: relative;
+    text-align: left;
+    padding-left: 10px;
+}
+.box-km-detail ul li:before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 5000px;
+    background: #ccc;
+}
+.box-km-detail ul li p{
+    text-align: left!important;
+}
+.gift-icon {
+    background: url(../../css/img/icon-hop-qua.png);
+    width: 100px;
+    height: 81px;
+    position: absolute;
+    background-size: 42%;
+    background-repeat: no-repeat;
+    top: -9px;
+    left: -5px;
+}
+.box-km-detail h2 {
+    padding: 5px;
+    background: #fff;
+    float: left;
+    text-transform: uppercase;
+    max-height: 26px!important;
+    border: none!important;
+}
+.title-km-detail {
+    float: left;
+    width: 100%;
+    padding-left: 24px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -16px;
+}
+.box-km-detail ul {
+    margin-bottom: 0;
+    float: left;
+    padding-left: 10px;
+
+}
+.box-km-detail .cont {
+    border-radius: 10px;
+    background: #fff;
+    float: left;
+    margin-left: -15px;
+    width: 120%;
+    margin-top: 20px;
+}
+.box-km-detail .cont.boder{
+    border: 1px solid #e3e3e3 !important;
+}
+.list_car_mobile .item_car_mobile .text h2 {
+    max-height: 22px;
+}
+.box-km-detail.clearfix .cont p {
+    color:black!important;
+    line-height: 24px;
+}
+/*07/01/2020*/
+.left .sitecontact p{
+    width: 100%!important;
+}
+.search_box_mobile form input{
+    border: 1px solid #ed2024!important;
+}
+.province_name,.search_box_mobile form button,.title-footer h2,.hot-new .list-hot-new .short-info a,.cs-nd .chinhsach .content-chinhsach a,.go-back a{
+    color: #ed2024!important;
+}
+.header_top_mobile .menu-btn-show .border-style{
+    background: #ed2024 !important;
+}
+.title_list_car h2 span,.title_list_car,.item_car_mobile .link_product a{
+    border-color: #ed2024!important;
+    color: #ed2024!important;
+}
+.phonering-alo-phone.phonering-alo-green .phonering-alo-ph-img-circle,.fixed-footer ul li{
+    background-color: #ed2024;
+}
+header{
+    background: #ffffff!important;
+}

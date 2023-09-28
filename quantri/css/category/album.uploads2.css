@@ -1,0 +1,47 @@
+.swfupload-control p {
+}
+.select-title {
+    border-bottom: 1px dotted #CCCCCC;
+}
+.log {
+    padding: 0;
+}
+.log li {
+    list-style: none outside none;
+}
+.log li .progressbar {
+}
+.log li .progress {
+}
+.log li p {
+}
+.log li.success {
+}
+.log li span.cancel {
+    background: url("images/close_image.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    left: 156px;
+    padding: 15px;
+    position: absolute;
+    top: -12px;
+}
+
+.button-upload-image{
+    background: url("images/them-anh.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 25px;
+    width: 94px;
+	cursor: pointer;
+}
+.button-select-image{
+    background: url("images/photo/button_upload_1.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 25px;
+    width: 195px;
+	cursor: pointer;	
+}
+
+#SWFUpload_0{
+    display: none;
+}

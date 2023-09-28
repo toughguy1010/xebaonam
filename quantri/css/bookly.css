@@ -1,0 +1,422 @@
+/*services bookly*/
+.box-bookly-services {
+    float: left;
+    width: 100%;
+    background: #eee;
+    padding: 10px;
+}
+.box-bookly-services .header{
+    float: left;
+    width: 100%;
+    margin-top: 7px;
+}
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+#add-services {
+    height: 35px;
+    line-height: 13px;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+.box-bookly-services h3 {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.box-bookly-services .accordion-style1.panel-group .panel-heading .accordion-toggle {
+    color: #4c8fbd;
+    background-color: #eef4f9;
+    position: relative;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    padding: 15px;
+    display: block;
+}
+.box-bookly-services .panel-heading span {
+    float: right;
+    margin-right: 45px;
+    font-weight: normal;
+    color: #000;
+    font-size: 15px;
+}
+.box-bookly-services .panel-heading input {
+    float: right;
+    width: 20px;
+    height: 15px;
+    margin-top: 0px;
+}
+.text-left{
+	text-align: left;
+}
+/* end */
+
+/*bookly-setting*/
+.box-setting{
+	float: left;
+	width: 100%;
+}
+.list-settings{
+	float: left;
+	width: 100%;
+}
+.list-settings ul {
+	list-style: none;
+	margin: 0px;
+}
+.list-settings ul li {
+	float: left;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding: 0px 15px;
+	margin-bottom: 10px;
+	box-shadow: 3px 3px 3px #ddd;
+	background: #e5e5e5;
+	font-size: 14px;
+}
+.list-settings ul li.active {
+    background: #438eb9;
+    color: #fff;
+}
+.box-setting-calendar{
+	float: left;
+	width: 100%;
+}
+.calendar-year{
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.calendar-year button {
+    background-color: #ebebeb !important;
+    border-color: #ebebeb !important;
+    padding: 0px 10px;
+    float: left;
+    border-radius:5px;
+}
+.calendar-year button:focus{
+	outline: none;
+}
+.calendar-year button:hover, .calendar-year button:focus{
+	background-color: #ebebeb !important;
+    border-color: #ebebeb !important;
+}
+.calendar-year button i {
+    color: #222;
+    font-size: 32px;
+}
+.calendar-year p span {
+    float: left;
+    height: 42px;
+    width: 80px;
+    font-size: 21px;
+    line-height: 42px;
+}
+.calendar-year p{
+    display: inline-block;
+    background: #ebebeb;
+    border-radius:5px;
+}
+.calendar-month{
+	float: left;
+	width: 100%;
+}
+.item-calendar-month{
+	float: left;
+	width: 100%;
+}
+.item-calendar-month h2{
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+}
+.calendar-day{
+	float: left;
+	width: 100%;
+	border-left:1px solid #ebebeb;
+}
+.calendar-day .dow{
+	background: #ebebeb;
+}
+.calendar-day .day, .calendar-day .dow {
+    float: left;
+    width: 14.285714%;
+    padding: 5px;
+    text-align: center;
+    border-right: 1px solid #ebebeb;
+    border-bottom:1px solid #ebebeb;
+}
+.calendar-day .old {
+    color: #c5d0dc;
+}
+.calendar-day .day a {
+    color: #5125d4;
+    font-weight: bold;
+}
+.calendar-day .day:hover{
+	background: #ebebeb;
+}
+.width-50 {
+    width: 50%;
+    float: left;
+}
+.width-33{
+	width: 33.33333%;
+	float: left;
+}
+.pad-right-15 {
+    padding-right: 15px;
+}
+.wishlist-table{
+	float: left;
+	width: 100%;
+}
+.wishlist-table .dropdown-menu{
+	padding: 15px;
+}
+.wishlist-table .dropdown-menu li input{
+	margin-right: 6px;
+}
+.wishlist-table button{
+    height: 34px;
+    line-height: 14px;
+}
+.wishlist-table button .caret{
+	margin-left: 5px;
+}
+.stl_btn_save {
+    background: #428bca;
+    border-radius: 3px;
+    padding: 5px 30px;
+    border: 1px solid #428bca;
+    color: #fff;
+    height: 34px;
+    float: right;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.list-staff{
+    float: left;
+    width: 100%;
+}
+.item-staff{
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.item-staff:hover h2{
+    background: #438eb9;
+    border: 1px solid #438eb9;
+    color: #fff;
+}
+.item-staff.active h2{
+    background: #438eb9;
+    border: 1px solid #438eb9;
+    color: #fff;
+}
+.item-staff h2 {
+    margin: 0px;
+    float: left;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    background: #f9f9f9;
+    border: 1px solid #ebebeb;
+}
+.item-staff h2 i {
+    font-size: 15px;
+    margin-right: 10px;
+    background: #fff;
+    float: left;
+    padding: 3px 5px;
+    color: #ccc;
+    margin-top: -2px;
+    border-radius: 50px;
+}
+.box-bookly-staff{
+    float: left;
+    width: 100%;
+    padding: 15px;
+    border:1px solid #ebebeb;
+}
+.img-info-staff{
+    display: flex;
+}
+.bookly-pretty {
+    float: left;
+    width: 120px;
+    overflow: hidden;
+    /* border-radius: 50%; */
+    height: 120px;
+    position: relative;
+}
+.bookly-pretty img {
+    width: 100%;
+    height: 100%;
+}
+.bookly-pretty span{
+    position: absolute;
+    bottom: 0px;
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.63);
+    color: #fff;
+    cursor: pointer;
+}
+.name-staff h2{
+    margin-left: 20px;
+    margin-top: 45px;
+    font-size: 25px;
+}
+.nav-tab-staff {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.nav-tab-staff ul{
+    list-style: none;
+    margin: 0px;
+    border-bottom: 1px solid #ccc;
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+.nav-tab-staff ul li {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    font-size: 16px;
+    color: #515151;
+    text-align: center;
+}
+.nav-tab-staff ul li i{
+    margin-right: 5px;
+}
+.nav-tab-staff ul li a{
+    color: #515151;
+}
+.nav-tab-staff ul li a:hover{
+    text-decoration: none;
+}
+.nav-tab-staff ul li.active a{
+    color: #438eb9;
+}
+.nav-tab-staff ul li.active{
+    border-bottom: 3px solid #438eb9;
+}
+.nav-tab-staff ul li:hover a{
+    color: #438eb9;
+}
+.nav-tab-staff ul li:hover{
+    border-bottom: 3px solid #ddd;
+}
+.nav-tab-staff ul li.active:hover{
+    border-bottom: 3px solid #438eb9;
+}
+.noDisplay{
+    display: none;
+}
+.wishlist-table .form-group label{
+    font-weight: bold;
+    font-size: 15px;
+    font-family: arial;
+}
+.wishlist-table .form-group p{
+    float: left;
+    width: 100%;
+}
+.width-100{
+    width: 100%;
+}
+#bookly-check-all-entities {
+    width: 16px;
+    height: 16px;
+    margin: 2px 8px 0;
+    margin-top: 1px\9;
+    line-height: normal;
+    float: left;
+}
+.header-services-staff{
+    float: left;
+    width: 100%;
+    background: #ebebeb;
+}
+.header-services-staff label{
+    float: left;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-family: arial;
+    padding: 15px;
+}
+.text-right{
+    right: right;
+}
+.item-services-staff{
+    float: left;
+    width: 100%;
+}
+.name-services, .price-services, .capacity-services{
+    padding: 15px;
+}
+.pad-15{
+    padding: 15px;
+}
+.capacity-services{
+    padding-right: 0px;
+}
+.boder-bottom-form{
+    float: left;
+    width: 100%;
+    height: 1px;
+    background: #ebebeb;
+    margin: 15px 0px 20px 0px;
+}
+#btn-breaktime{
+    height: 35px;
+    line-height: 13px;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+.time-services strong{
+    font-size: 15px;
+    padding: 0px 10px;
+}
+.box-addbreak-time{
+    position: absolute;
+    top: 100%;
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 15px 15px 0px;
+    background: #fff;
+   /* display: none;*/
+   z-index: 99999;
+}
+.add-break-time{
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.box-addbreak-time:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 18px;
+    top: -6px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #ccc;
+}
+.celandar-staff{
+    float: left;
+    width: 100%;
+}
+/*end*/

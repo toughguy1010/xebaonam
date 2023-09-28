@@ -1,0 +1,26 @@
+<div class="widget widget-box">
+    <div class="widget-header">
+        <h4><?php echo Yii::t('product', 'product_create_warranty_new'); ?></h4>
+        <div class="widget-toolbar no-border">
+            <a class="btn btn-xs btn-primary" id="saveevent" onclick="submit_event_form()">
+                <i class="icon-ok"></i>
+                <?php echo Yii::t('common', 'save') ?>
+            </a>
+        </div>
+    </div>
+    <div class="widget-body no-padding">
+        <div class="widget-main">
+            <?php
+            if(!isset($form)){
+                $form = array();
+            }?>
+            <?php $this->renderPartial('_formRent', array('model' => $model, 'form' => $form, 'option_product' => $option_product)); ?>
+        </div>
+    </div>
+</div>
+<script>
+    function submit_event_form() {
+        document.getElementById("product-rent-form").submit();
+        return false;
+    }
+</script>

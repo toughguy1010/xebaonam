@@ -1,0 +1,1 @@
+<?php return array('value'=> '{"id":"31955","page_widget_id":"32568","site_id":"1155","user_id":"1072","config_data":"{\"helptext\":\"\",\"showallpage\":\"1\",\"widget_title\":\"\\u0110\\u0103ng k\\u00fd nh\\u1eadn tin\",\"show_wiget_title\":\"1\"}","created_time":"1466423937","modified_time":"1466423937"}', 'mode'=>true);
