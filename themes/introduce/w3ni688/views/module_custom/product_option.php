@@ -4,7 +4,7 @@
         <strong class="label">Lựa chọn phiên bản</strong>
         <div class="options" id="versionOption">
             <?php foreach ($products as $pr_) {
-                $productModel = Product::model()->findAllByPk($pr_['id']);
+                $productModel = Product::model()->findAllByPk($pr_['id']); 
                 $category_id = $productModel[0]->product_category_id;
                 if ($category_id != 39181) {
             ?>

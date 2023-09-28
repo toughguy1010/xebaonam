@@ -578,7 +578,7 @@ if ($attributesShow && count($attributesShow)) {
                 <?php
                 //               $subject = $product['product_sortdesc'];
                 //               $khuyenmai = explode("\n", $subject);
-                echo '<div class="cont mCustomScrollbar"><ul>';
+                echo '<div class="cont mCustomScrollbar"><ul>'; 
                 foreach ($products_rel as $each) { ?>
                     <li>
                         <p>
