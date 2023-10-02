@@ -13,9 +13,11 @@ $count_pr = count($shoppingCart->findAllProducts());
         margin-left: 80px !important;
         font-weight: 600;
     }
+
     .infoproduct div a label {
         color: #333;
     }
+
     .choosenumber {
         float: right;
         overflow: hidden;
@@ -28,6 +30,7 @@ $count_pr = count($shoppingCart->findAllProducts());
         font-size: 14px;
         color: #333;
     }
+
     .choosenumber .minus {
         float: left;
         border-right: 1px solid #dfdfdf;
@@ -38,6 +41,7 @@ $count_pr = count($shoppingCart->findAllProducts());
         cursor: pointer;
         border: none;
     }
+
     .choosenumber .number {
         width: 30px;
         height: 30px;
@@ -46,6 +50,7 @@ $count_pr = count($shoppingCart->findAllProducts());
         outline: none;
         border: 1px solid #ededed;
     }
+
     .choosenumber {
         width: 14%;
         display: flex !important;
@@ -53,9 +58,9 @@ $count_pr = count($shoppingCart->findAllProducts());
         top: 65px;
         right: 30px;
     }
-    .infoproduct div.delete-item {
 
-    }
+    .infoproduct div.delete-item {}
+
     .infoproduct div.delete-item span {
         float: left;
         text-decoration: none;
@@ -68,14 +73,17 @@ $count_pr = count($shoppingCart->findAllProducts());
         border-radius: 100%;
         margin-right: 5px;
     }
+
     .infoproduct div.delete-item a {
         display: flex;
         align-items: center;
         color: #999;
     }
+
     #wrap_cart {
         background: #fff;
     }
+
     .area-total {
         display: block;
         overflow: visible;
@@ -84,62 +92,82 @@ $count_pr = count($shoppingCart->findAllProducts());
         float: left;
         width: 100%;
     }
+
     .infoproduct {
         padding: 10px 30px;
     }
+
     .area-total .total-provisional {
         display: block;
         overflow: hidden;
         padding-bottom: 10px;
     }
-    .area-total .total-provisional span,.area-total .total-price strong {
+
+    .area-total .total-provisional span,
+    .area-total .total-price strong {
         float: left;
         color: #333;
     }
+
     .area-total .total-provisional span:nth-child(2) {
         float: right;
     }
+
     .area-total .total-price strong:nth-child(2) {
         float: right;
         color: #f30c28;
     }
-
 </style>
 <?php foreach ($shoppingCart->findAllProducts() as $key => $product) {
-    ?>
+?>
     <div class="infoproduct">
         <a class="linksp">
-            <img width="40" height="40"
-                 src="<?php echo ClaHost::getImageHost() . $product['avatar_path'] . 's80_80/' . $product['avatar_name'] ?>"
-                 alt="<?= $product['name'] ?>">
+            <img width="40" height="40" src="<?php echo ClaHost::getImageHost() . $product['avatar_path'] . 's80_80/' . $product['avatar_name'] ?>" alt="<?= $product['name'] ?>">
         </a>
         <div>
-            <a href="<?= Yii::app()->createUrl('economy/product/detail', ['id' => $product->id, 'alias' => $product->alias]) ?>"
-               title="<?= $product['name'] ?> target=" _blank">
-            <label><?= $product['name'] ?></label>
+            <a href="<?= Yii::app()->createUrl('economy/product/detail', ['id' => $product->id, 'alias' => $product->alias]) ?>" title="<?= $product['name'] ?> target=" _blank">
+                <label><?= $product['name'] ?></label>
             </a>
         </div>
         <div id="price-Product">
-            <?php if ($product['price_market'] >0) {
+            <?php if ($product['price_market'] > 0) {
                 $discount = 'Giảm ' . ClaProduct::getDiscount((int)$product['price_market'], (int)$product['price']) . '%';
-                ?>
+            ?>
                 <i>-<?= $discount ?></i> Giá sản phẩm
                 <span class="line-price"><?= number_format($product['price_market'], 0, '', '.') . '₫' ?></span>
             <?php } ?>
             <strong><?= number_format($product['price'], 0, '', '.') . '₫' ?> </strong>
         </div>
-        <div class="km">Chi tiết khuyến mãi</div>
+
         <!-- Khuyến mãi -->
-        <div class="boxShowKM" style="display: none;">
-            <?= $product['product_sortdesc'] ?>
-        </div>
         <?php
+        $product_id = $product['id'];
+        $list_rel_products = ProductRelation::getProductIdInRel($product_id);
+        if (!empty($list_rel_products)) {
+        ?>
+            <div class="km">Chi tiết khuyến mãi</div>
+            <div class="boxShowKM" style="display: none;">
+                <?php
+                foreach ($list_rel_products as $product_rel) :
+                    $productRel = Product::model()->findByPk($product_rel);
+                    $category_id = $productRel->product_category_id;
+                    if ($productRel && $category_id == 39181) :
+                        $productName = $productRel->name;
+                        echo "<p>" . $productName . "</p>";
+                ?>
+
+                <?php
+                    endif;
+                endforeach; ?>
+            </div>
+        <?php
+        }   
         $attributes = $shoppingCart->getAttributesByKey($key);
         if ($attributes && count($attributes)) {
-            ?>
+        ?>
             <div class="km1">
                 <?php foreach ($attributes as $attr) {
-                    ?>
+                ?>
 
                     <?php echo $attr['name']; ?> : <?php echo $attr['value']; ?>
                 <?php } ?>
@@ -159,7 +187,7 @@ $count_pr = count($shoppingCart->findAllProducts());
 <?php } ?>
 <div class="area-total">
     <div class="total-provisional">
-        <span class="total-product-quantity">Tạm tính (<?=$count_pr?> sản phẩm):</span>
+        <span class="total-product-quantity">Tạm tính (<?= $count_pr ?> sản phẩm):</span>
         <span class="temp-total-money"><?php echo $shoppingCart->getTotalPrice(); ?></span>
     </div>
     <div class="total-price"><strong>Tổng tiền:</strong><strong><?php echo $shoppingCart->getTotalPrice(); ?>₫</strong>
@@ -167,7 +195,6 @@ $count_pr = count($shoppingCart->findAllProducts());
 </div>
 
 <script type="text/javascript">
-
     function increaseQty(id, key) {
         var current = $(id).val();
         current++;
@@ -185,6 +212,4 @@ $count_pr = count($shoppingCart->findAllProducts());
         var quantity = $(id).val();
         document.location = "<?php echo $this->createUrl('/economy/shoppingcart/update') ?>" + "?key=" + key + "&qty=" + quantity;
     }
-
 </script>
-

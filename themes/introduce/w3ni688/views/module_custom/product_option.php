@@ -6,7 +6,7 @@
             <?php foreach ($products as $pr_) {
                 $productModel = Product::model()->findAllByPk($pr_['id']); 
                 $category_id = $productModel[0]->product_category_id;
-                if ($category_id != 39181) {
+                if ($category_id != 39181) {               
             ?>
                     <div class="item <?= ($pr_['id'] == $id) ? 'selected' : '' ?>">
                         <a href="<?= $pr_['link'] ?>">

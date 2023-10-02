@@ -1,6 +1,6 @@
 <?php
 Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/plugins/colorbox/jquery.colorbox-min.js');
-?>
+?> 
 <?php $themUrl = Yii::app()->theme->baseUrl; ?>
 <?php
 $images = $model->getImages();
@@ -34,7 +34,7 @@ $videos = Product::getVideoByProductid($product['id']);
 
 <div class="page-in page-detail-product">
     <div class="container" style="position: relative">
-        <div class="menu-active-product-detail" style="">
+        <div class="menu-active-product-detail" >
             <ul>
                 <li class="mn-mt active">
                     <a class="searchbychar" href="javascript:void(0)" data-toggle="tab" role="tab" data-target="cont-detail-product" title="#">Mô tả</a>
@@ -847,7 +847,7 @@ $videos = Product::getVideoByProductid($product['id']);
                         <div class="widget-product-detail abcfix" style="position: relative; max-height: 560px;overflow: hidden;float: left;width: 100%;">
                             <h2>Mô tả chi tiết</h2>
                             <?php echo $product['product_desc']; ?>
-                            <span class="seemore-detail" style="">Đọc thêm <i class="fa fa-caret-down"></i></span>
+                            <span class="seemore-detail" >Đọc thêm <i class="fa fa-caret-down"></i></span>
                         </div>
                         <script>
                             $(function() {
